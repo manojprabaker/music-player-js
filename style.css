@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{ 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root{
+  --pink: #ff74a4;
+  --violet: #9f6ea3;
+  --lightblack: #515C6F;
+  --white: #ffffff;
+  --darkwhite: #cecaca;
+  --pinkshadow: #ffcbdd;
+  --lightbshadow: rgba(0,0,0,0.15);
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, #8360c3, #2ebf91);
+}
+.wrapper{
+  width: 380px;
+  padding: 25px 30px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 15px;
+  background: #ffffff;
+  
+}
+.wrapper i{
+  cursor: pointer;
+}
+
+.img-area{
+  width: 100%;
+  height: 256px;
+  overflow: hidden;
+  margin-top: 25px;
+  border-radius: 15px;
+  /* box-shadow: 0px 6px 12px var(--lightbshadow); */
+}
+.img-area img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.song-details{
+  text-align: center;
+  margin: 30px 0;
+}
+.song-details p{
+  color: #4b4b4b;
+}
+.song-details .name{
+  font-size: 21px;
+}
+
+
+.controls {
+  display: flex;
+  margin: 40px 0 5px 0;
+  align-items: center;
+  justify-content: center;
+}
+.controls i{
+  font-size: 28px;
+  user-select: none;
+  color:#8360c3;
+}
+.controls i:nth-child(2),
+.controls i:nth-child(4){
+  font-size: 43px;
+}
+.controls #prev {
+  margin-right: 40px;
+}
+.controls #next {
+  margin-left: 33px;
+}
+.controls .play-pause{
+  height: 54px;
+  width: 54px;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+ 
+}
+
+.play-pause i {
+  font-size: 2.4rem;
+  height: 43px;
+  width: 43px;
+  line-height: 43px;
+  text-align: center;
+}
+
+.bi-pause-circle-fill{
+  display: none;
+}
+.wrapper h1 {
+  color: #34423d;
+  text-align: center;
+}
